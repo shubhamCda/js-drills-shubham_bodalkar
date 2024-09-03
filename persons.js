@@ -102,3 +102,14 @@ const arrayOfObjects = [
   ];
 
   module.exports = arrayOfObjects;
+
+
+  //    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
+
+//    Implement a function that retrieves and prints the hobbies of individuals with a specific age, say 30 years old.
+
+//    Create a function that extracts and displays the names of individuals who are students (`isStudent: true`) and live in Australia.
+
+//    Write a function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
+
+//    Implement a loop to access and print the ages of all individuals in the dataset.
