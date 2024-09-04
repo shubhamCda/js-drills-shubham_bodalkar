@@ -103,7 +103,9 @@ const arrayOfObjects = [
 
   module.exports = arrayOfObjects;
 
-  console.log(arrayOfObjects[0]['age']);
+//   console.log(arrayOfObjects[0].isStudent);
+//   console.log(arrayOfObjects[0].country);
+  
   
 
 
