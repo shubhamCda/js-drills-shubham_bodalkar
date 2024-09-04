@@ -1,15 +1,15 @@
-// function accessEmail(arr) {
-//     let mailArr = [];
-//     for (let i = 0; i < arr.length; i++){
-//         const mail = arr[i].email;
+function accessEmail(arr) {
+    let mailArr = [];
+    for (let i = 0; i < arr.length; i++){
+        const mail = arr[i].email;
         
-//         mailArr.push(mail);
-//         // console.log("I'm here");
+        mailArr.push(mail);
+        // console.log("I'm here");
         
-//     }
-//     return mailArr;
+    }
+    return mailArr;
     
-// }
+}
 
 function personHobbies(arr, age) {
     for (let i = 0; i < arr.length; i++) {
@@ -41,7 +41,20 @@ function indexLogs(arr, index) {
     return logs;
 }
 
-module.exports = { indexLogs };
+function accessAge(arr) {
+    let ages = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        ages.push(arr[i].name);
+        
+    }
+
+    return ages;
+}
+
+module.exports = { accessAge };
+
+// module.exports = { indexLogs };
 
 // module.exports = { studentName };
 
