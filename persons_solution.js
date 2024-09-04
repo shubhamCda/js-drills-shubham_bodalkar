@@ -60,8 +60,22 @@ function firstHobby(arr){
 	return getHobbies;
 }
 
-module.exports = { firstHobby };
+function nameAndEmail(arr, age){
+	let logs;
+	for (let i = 0; i < arr.length; i++){
+		if (arr[i].age === age){
+			logs = {
+				name: arr[i].name,
+				email: arr[i].email
+			}
+		}
+	}
+	return logs;
+}
 
+module.exports = { nameAndEmail };
+
+//module.exports = { firstHobby };
 
 //module.exports = { accessAge };
 

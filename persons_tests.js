@@ -1,9 +1,10 @@
-const { accessEmail, personHobbies, studentName, indexLogs, accessAge, firstHobby } = require('./persons_solution');
+const { accessEmail, personHobbies, studentName, indexLogs, accessAge, firstHobby, nameAndEmail } = require('./persons_solution');
 
 const person = require('./persons');
 
+console.log(nameAndEmail(person, 27));
 
-console.log(firstHobby(person));
+//console.log(firstHobby(person));
 
 //console.log(accessAge(person));
 
