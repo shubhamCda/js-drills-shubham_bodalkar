@@ -103,6 +103,9 @@ const arrayOfObjects = [
 
   module.exports = arrayOfObjects;
 
+  console.log(arrayOfObjects[0]['age']);
+  
+
 
   //    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
 
