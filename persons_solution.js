@@ -32,7 +32,18 @@ function studentName(arr) {
 }
 
 
-module.exports = { studentName };
+function indexLogs(arr, index) {
+    const logs = {
+        name: arr[index].name,
+        city: arr[index].city
+    }
+
+    return logs;
+}
+
+module.exports = { indexLogs };
+
+// module.exports = { studentName };
 
 // module.exports = { personHobbies };
 
