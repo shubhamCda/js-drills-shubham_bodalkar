@@ -4,8 +4,10 @@ function accessEmail(arr) {
         const mail = arr[i].email;
         
         mailArr.push(mail);
-        // console.log("I'm here");
-        
+              
+    }
+    if(mailArr.length === 0){
+	    return "Not Found";
     }
     return mailArr;
     
@@ -18,38 +20,45 @@ function personHobbies(arr, age) {
         }
         
     }
+    return "Not Found";
 }
 
 function studentName(arr) {
-    let names = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].isStudent && arr[i].country === 'Australia') {
-            names.push(arr[i].name);
-        }
-        
-    }
-    return names;
+	let names = []
+    	for (let i = 0; i < arr.length; i++) {
+        	if (arr[i].isStudent && arr[i].country === 'Australia') {
+            	names.push(arr[i].name);
+        	}	
+	}
+    	if( names.length === 0){
+		return "Not Found";
+    	}
+    	return names;
 }
 
 
 function indexLogs(arr, index) {
-    const logs = {
-        name: arr[index].name,
-        city: arr[index].city
-    }
+	if (arr[index]){
+		const logs = {
+        	name: arr[index].name,
+        	city: arr[index].city
+   	 	}
+		return logs;
+	}
+	return "Not Found";
 
-    return logs;
 }
 
 function accessAge(arr) {
-    let ages = [];
+	let ages = [];
 
-    for (let i = 0; i < arr.length; i++) {
-        ages.push(arr[i].name);
-        
-    }
-
-    return ages;
+    	for (let i = 0; i < arr.length; i++) {
+        	ages.push(arr[i].name);
+       	}
+    	if (ages.length === 0){
+	    return "Not Found"
+	}
+    	return ages;
 }
 
 function firstHobby(arr){
@@ -57,11 +66,16 @@ function firstHobby(arr){
 	for (let i = 0; i < arr.length; i++){
 		getHobbies.push(arr[i].hobbies[0]);
 	}
+
+	if(getHobbies.length === 0){
+		return "Not Found";
+	}
+
 	return getHobbies;
 }
 
 function nameAndEmail(arr, age){
-	let logs;
+	let logs = {};
 	for (let i = 0; i < arr.length; i++){
 		if (arr[i].age === age){
 			logs = {
@@ -69,6 +83,9 @@ function nameAndEmail(arr, age){
 				email: arr[i].email
 			}
 		}
+	}
+	if (Object.keys(logs).length === 0){
+		return "Not Found";
 	}
 	return logs;
 }
@@ -83,6 +100,9 @@ function logInfo(arr){
 		}
 
 		cityAndCountry.push(log);
+	}
+	if ( cityAndCountry.length === 0 ){
+		return "Not Found";
 	}
 
 	return cityAndCountry;
