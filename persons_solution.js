@@ -52,7 +52,18 @@ function accessAge(arr) {
     return ages;
 }
 
-module.exports = { accessAge };
+function firstHobby(arr){
+	let getHobbies = [];
+	for (let i = 0; i < arr.length; i++){
+		getHobbies.push(arr[i].hobbies[0]);
+	}
+	return getHobbies;
+}
+
+module.exports = { firstHobby };
+
+
+//module.exports = { accessAge };
 
 // module.exports = { indexLogs };
 
