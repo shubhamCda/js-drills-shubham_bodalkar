@@ -73,7 +73,25 @@ function nameAndEmail(arr, age){
 	return logs;
 }
 
-module.exports = { nameAndEmail };
+function logInfo(arr){
+	let cityAndCountry = [];
+
+	for (let i = 0; i < arr.length; i++){
+		const log = {
+			city : arr[i].city,
+			country: arr[i].country
+		}
+
+		cityAndCountry.push(log);
+	}
+
+	return cityAndCountry;
+}
+
+module.exports = { logInfo };
+
+
+//module.exports = { nameAndEmail };
 
 //module.exports = { firstHobby };
 
