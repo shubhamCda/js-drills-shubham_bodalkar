@@ -25,7 +25,19 @@ function sortCarModel(arr){
 	return carModelArr.sort();
 }
 
-module.exports = { sortCarModel };
+
+function carYear(arr){
+	let carYearArr = [];
+	for (let i = 0; i < arr.length; i++){
+		const year = arr[i]['car_year'];
+		carYearArr.push(year);
+	}
+	return carYearArr;
+}
+
+module.exports = { carYear };
+
+//module.exports = { sortCarModel };
 
 //module.exports = { lastCarInfo };
 
