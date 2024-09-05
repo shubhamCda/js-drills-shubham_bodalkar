@@ -62,18 +62,10 @@ let inventory = [
 ];
 
 
-console.log(inventory[0]['id']);
 
-for (let i = 0; i < inventory.length; i++) {
-  const element = inventory[i]['id'];
+module.exports = inventory;    
+    
 
-  if (element === 33) {
-    console.log(inventory[i]);
-    
-    
-  }
-  
-}
 
 
 // ==== Problem #1 ====
