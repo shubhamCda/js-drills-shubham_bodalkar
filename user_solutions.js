@@ -43,7 +43,27 @@ function findNationality(users, nationality){
 }
 
 
-module.exports = { findNationality };
+function findQualification(users, qualification){
+	const usrName = Object.keys(users);
+
+	let arr = [];
+
+	for (let i = 0; i < usrName.length; i++){
+		const usrQualification = users[usrName[i]].qualification;
+
+		if (usrQualification === qualification){
+			arr.push(usrName[i]);
+		}
+	}
+	if (arr.length === 0){
+		return "Not Found";
+	}
+	return arr;
+}
+
+module.exports = { findQualification };
+
+//module.exports = { findNationality };
 
 //moduel.exports = { playingVdoGames };
 
