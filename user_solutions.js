@@ -22,4 +22,28 @@ function playingVdoGames(users) {
 	return usrArr;
 }
 
-moduel.exports = { playingVdoGames };
+function findNationality(users, nationality){
+	const usrName = Object.keys(users);
+	let arr = [];
+
+	for (let i = 0; i < usrName.length; i++){
+		const usrNationality = users[usrName[i]].nationality;
+		//console.log(usrNationality);
+		
+
+		if (usrNationality === nationality){
+			arr.push(usrName[i]);
+		}
+	}
+	if (arr.length === 0){
+		return "Not Found";
+	}
+
+	return arr;
+}
+
+
+module.exports = { findNationality };
+
+//moduel.exports = { playingVdoGames };
+

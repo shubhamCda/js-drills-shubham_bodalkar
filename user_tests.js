@@ -2,4 +2,7 @@ const { playingVdoGames, findNationality, findQualification, findDesignation } =
 
 const user = require('./users');
 
-console.log(playingVdoGames(user));
+console.log(findNationality(user, "Germany"));
+
+
+//console.log(playingVdoGames(user));
