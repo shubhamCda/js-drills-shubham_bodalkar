@@ -16,6 +16,17 @@ function lastCarInfo(arr){
 }
 
 
-module.exports = { lastCarInfo };
+function sortCarModel(arr){
+	let carModelArr = [];
+	for (let i = 0; i < arr.length; i++){
+		const carModel = arr[i]['car_model'];
+		carModelArr.push(carModel);
+	}
+	return carModelArr.sort();
+}
+
+module.exports = { sortCarModel };
+
+//module.exports = { lastCarInfo };
 
 // module.exports = { carInfoById };
