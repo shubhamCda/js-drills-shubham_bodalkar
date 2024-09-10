@@ -35,7 +35,25 @@ function carYear(arr){
 	return carYearArr;
 }
 
-module.exports = { carYear };
+
+function vintageCar(arr){
+	let count = 0;
+	let oldCarArr = [];
+	const carArr = carYear(arr);
+	for (let i = 0; i < carArr.length; i++) {
+		if (carArr[i] < 2000) {
+			count++;
+			oldCarArr.push(carArr[i])
+		}
+		
+	}
+	return `Older Cars: [${oldCarArr}], Count: ${count}`;
+}
+
+
+module.exports = { vintageCar };
+
+//module.exports = { carYear };
 
 //module.exports = { sortCarModel };
 

@@ -23,23 +23,23 @@ function personHobbies(arr, age) {
     return "Not Found";
 }
 
-function studentName(arr) {
-	let names = []
+function studentName(arr, nation) {
+	let namesArr = []
     	for (let i = 0; i < arr.length; i++) {
-        	if (arr[i].isStudent && arr[i].country === 'Australia') {
-            	names.push(arr[i].name);
+        	if (arr[i].isStudent && arr[i].country === nation) {
+            	namesArr.push(arr[i].name);
         	}	
 	}
-    	if( names.length === 0){
+    	if( namesArr.length === 0){
 		return "Not Found";
     	}
-    	return names;
+    	return namesArr;
 }
 
 
 function indexLogs(arr, index) {
 	if (arr[index]){
-		const logs = {
+		let logs = {
         	name: arr[index].name,
         	city: arr[index].city
    	 	}
@@ -78,7 +78,7 @@ function nameAndEmail(arr, age){
 	let logs = {};
 	for (let i = 0; i < arr.length; i++){
 		if (arr[i].age === age){
-			logs = {
+			let logs = {
 				name: arr[i].name,
 				email: arr[i].email
 			}
@@ -94,7 +94,7 @@ function logInfo(arr){
 	let cityAndCountry = [];
 
 	for (let i = 0; i < arr.length; i++){
-		const log = {
+		let log = {
 			city : arr[i].city,
 			country: arr[i].country
 		}

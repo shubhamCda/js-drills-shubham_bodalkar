@@ -2,9 +2,9 @@ const { accessEmail, personHobbies, studentName, indexLogs, accessAge, firstHobb
 
 const person = require('./persons');
 
-//console.log(logInfo(person));
+console.log(logInfo(person));
 
-//console.log(nameAndEmail(person, 27));
+console.log(nameAndEmail(person, 27));
 
 //console.log(firstHobby(person));
 
