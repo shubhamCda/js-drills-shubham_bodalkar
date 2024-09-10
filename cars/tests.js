@@ -1,9 +1,12 @@
-const { carInfoById, lastCarInfo, sortCarModel, carYear, vintageCar } = require('./solutions');
+const { carInfoById, lastCarInfo, sortCarModel, carYear, vintageCar, audiAndBmw } = require('./solutions');
 
 const inventory = require('./cars');
 
-console.log(vintageCar(inventory));
 
+console.log(audiAndBmw(inventory));
+
+
+// console.log(vintageCar(inventory));
 
 // console.log(carYear(inventory));
 

@@ -51,7 +51,22 @@ function vintageCar(arr){
 }
 
 
-module.exports = { vintageCar };
+function audiAndBmw(arr) {
+	let carArr = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		const carMake = arr[i]['car_make'];
+		if (carMake === 'Audi' || carMake === 'BMW') {
+			carArr.push(carMake);	
+		}
+			
+	}
+	return JSON.stringify(carArr);
+}
+
+module.exports = { audiAndBmw };
+
+// module.exports = { vintageCar };
 
 //module.exports = { carYear };
 
