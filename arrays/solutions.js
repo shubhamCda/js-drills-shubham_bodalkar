@@ -73,3 +73,22 @@ export function filter(arr, callback) {
     }
     return newArr;
 }
+
+export function flatten(arr) {
+    const newArr = [];
+    extractEle(arr);
+    function extractEle(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            const element = arr[i];
+    
+            if (Array.isArray(element)) {
+                extractEle(element);
+            }else{
+                newArr.push(element);
+            }
+            
+        }
+    }
+    return newArr;
+    
+}

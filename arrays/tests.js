@@ -1,4 +1,4 @@
-import { each, map, reduce, find, filter } from "./solutions.js";
+import { each, map, reduce, find, filter, flatten } from "./solutions.js";
 import items from "./arrays.js";
 
 /*
@@ -22,6 +22,12 @@ const search = find(items, (ele, foundEle) =>(ele === foundEle));
 // console.log(search);
 
 const fill = filter(items, (ele) =>(ele > 2));
-console.log(fill);
+// console.log(fill);
+
+const mixedArr = [1, [2], [3, [[4]]]];
+
+const extract = flatten(mixedArr);
+console.log(extract);
+
 
 
