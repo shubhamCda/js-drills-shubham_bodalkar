@@ -62,9 +62,7 @@ let inventory = [
 ];
 
 
-
-module.exports = inventory;    
-    
+export default inventory;
 
 
 

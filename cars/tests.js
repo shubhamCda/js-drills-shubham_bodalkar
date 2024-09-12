@@ -1,12 +1,11 @@
-const { carInfoById, lastCarInfo, sortCarModel, carYear, vintageCar, audiAndBmw } = require('./solutions');
-
-const inventory = require('./cars');
+import { vintageCar, audiAndBmw } from "./solutions.js"
+import inventory from "./cars.js";
 
 
 console.log(audiAndBmw(inventory));
 
 
-// console.log(vintageCar(inventory));
+console.log(vintageCar(inventory));
 
 // console.log(carYear(inventory));
 
