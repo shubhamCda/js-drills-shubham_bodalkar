@@ -1,5 +1,4 @@
-import { each, map, reduce
- } from "./solutions.js";
+import { each, map, reduce, find, filter } from "./solutions.js";
 import items from "./arrays.js";
 
 /*
@@ -16,5 +15,13 @@ const mapFun = map(items, (ele, ind) =>{
 
 // console.log(mapFun);
 
-let res = reduce(items, (accumulator, curr)=> accumulator + curr, 10);
-console.log(`Reduce:  ${res}`);
+const res = reduce(items, (accumulator, curr)=> accumulator + curr, 10);
+// console.log(`Reduce:  ${res}`);
+
+const search = find(items, (ele, foundEle) =>(ele === foundEle));
+// console.log(search);
+
+const fill = filter(items, (ele) =>(ele > 2));
+console.log(fill);
+
+

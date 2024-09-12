@@ -47,3 +47,29 @@ export function reduce(arr, callback, startingValue) {
     }
     return result;
 }
+
+export function find(arr, callback, searchElement) {
+    if (searchElement !== undefined){
+        for (let i = 0; i < arr.length; i++) {
+            if (callback(arr[i], searchElement)) {
+                return arr[i];
+            }
+
+        }
+    }   
+    return undefined;
+
+}
+
+export function filter(arr, callback) {
+    let newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        const element = callback(arr[i]);
+        if (element) {
+            newArr.push(arr[i]);
+        }
+        
+    }
+    return newArr;
+}
