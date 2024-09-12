@@ -64,14 +64,19 @@ function audiAndBmw(arr) {
 	return JSON.stringify(carArr);
 }
 
-module.exports = { audiAndBmw };
+// module.exports = { audiAndBmw ,vintageCar};
 
-// module.exports = { vintageCar };
+// // module.exports = {  };
 
-//module.exports = { carYear };
+// //module.exports = { carYear };
 
-//module.exports = { sortCarModel };
+// //module.exports = { sortCarModel };
 
-//module.exports = { lastCarInfo };
+// //module.exports = { lastCarInfo };
 
-// module.exports = { carInfoById };
+// // module.exports = { carInfoById };
+
+export {
+	audiAndBmw,
+	vintageCar
+}
