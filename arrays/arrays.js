@@ -1,4 +1,6 @@
 const items = [1, 2, 3, 4, 5, 5]; // use this array to test your code.
+
+export default items;
 /*
     Complete the following functions.
     These functions only need to work with arrays.
