@@ -15,8 +15,8 @@ export function keys(obj) {
 export function values(obj) {
     let objValues = Object.values(obj);
 
-    console.log(objValues);
-    
+    // console.log(objValues);
+
     
     let valueArr = [];
 
@@ -30,4 +30,20 @@ export function values(obj) {
         
     }
     return valueArr;
+}
+
+
+export function mapObject(obj, callback) {
+    let objValues = Object.values(obj);
+
+    let valuesArr = [];
+
+    for (let index = 0; index < objValues.length; index++) {
+        const values = callback(objValues[index]);
+        console.log(values);
+        
+        valuesArr.push(values);
+        
+    }
+    return valuesArr;
 }
