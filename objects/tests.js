@@ -1,4 +1,4 @@
-import { keys, values, mapObject, pairs, invert } from './solutions.js';
+import { keys, values, mapObject, pairs, invert, defaults } from './solutions.js';
 
 import testObject from './objects.js';
 
@@ -11,6 +11,19 @@ import testObject from './objects.js';
 
 // console.log(pairs(testObject));
 
-console.log(invert(testObject));
+// console.log(invert(testObject));
+
+const defaultProps = {
+    name : "Wonder Woman",
+    age : 39,
+    location: "Gotham",
+    organization : "Justice League",
+    
+}
+
+const sol = defaults(testObject, defaultProps);
+
+console.log(sol);
+
 
 

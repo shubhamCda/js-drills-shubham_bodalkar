@@ -70,8 +70,23 @@ export function invert(obj) {
 
     for (let index = 0; index < objKeys.length; index++) {
         newObj[objValues[index]] = objKeys[index];
-        console.log(newObj);
+        // console.log(newObj);
         
     }
     return newObj;
+}
+
+export function defaults(obj, defaultProps) {
+    if (!obj) {
+        return obj;
+    }
+
+    for (let key in defaultProps) {
+        if (!obj[key]) {
+            obj[key] = defaultProps[key];
+            // console.log(obj[key]);
+            
+        }
+    }
+    return obj;
 }
