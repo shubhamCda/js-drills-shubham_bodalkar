@@ -40,10 +40,24 @@ export function mapObject(obj, callback) {
 
     for (let index = 0; index < objValues.length; index++) {
         const values = callback(objValues[index]);
-        console.log(values);
+        // console.log(values);
         
         valuesArr.push(values);
         
     }
     return valuesArr;
+}
+
+
+export function pairs(obj) {
+    let objKeys = Object.keys(obj);
+    let objValues = Object.values(obj);
+
+    let kvPairs = [];
+
+    for (let index = 0; index < objKeys.length; index++) {
+        kvPairs.push([objKeys[index], objValues[index]]);
+        
+    }
+    return kvPairs;
 }
