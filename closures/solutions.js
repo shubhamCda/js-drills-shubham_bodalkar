@@ -42,3 +42,37 @@ export function limitFunctionCallCount(callback, n) {
 // console.log(printing("tulsi"));
 // console.log(printing("bodalkar"));
 // console.log(printing("mul"));
+
+
+export function cacheFunction(callback) {
+    let cacheMem = {};
+
+    function invoke(params) {
+        if (cacheMem[params]) {
+            console.log(cacheMem);
+            
+            return cacheMem[params];
+        } else {
+            const res = callback(params);
+            cacheMem[params] = res;
+            console.log(cacheMem);
+            
+            return res;
+        }
+    }
+    return invoke;
+}
+
+// const result = cacheFunction((val) => {
+//     console.log("callback function invoked");
+    
+//     return val*2;
+// })
+
+// console.log(result(2));
+// console.log(result(3));
+// console.log(result(2));
+// console.log(result(5));
+// console.log(result(2));
+
+
